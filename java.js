@@ -3,7 +3,10 @@ let btn = document.querySelector('#btn');
 let size = 256;
 
 btn.addEventListener('click', () => {
-    size = prompt('What size do u want?') ** 2;
+    size = 0;
+    size = prompt('What size do u want?');
+    if(size > 100){size = Math.pow(100, 2)}
+    size = Math.pow(size, 2);
 
     while(container.firstChild){
         container.removeChild(container.lastChild);
