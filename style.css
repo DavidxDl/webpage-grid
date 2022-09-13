@@ -1,19 +1,31 @@
 body {
     margin: 0;
-}
-.container {
-    margin: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    
-    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    position: relative;
+    margin: 0;
+    height: 500px;
+    min-height: 0;
+    min-width: 0;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+   
 }
 .square{
-    width: 77px;
-    height: 77px;
+   
+   
+    min-height: 0;
+    
     background-color: gray;
-    border: 3px solid black;
+    border: 1px solid black;
+    
+
 
 }
 .hover {
@@ -29,7 +41,7 @@ button{
     width: 70px;
 }
 
-/* //  while(container.firstChild){
-        //    container.removeChild(container.lastChild);
-      //  console.log(container)
-    //}*/
+    /*while(container.firstChild){
+           container.removeChild(container.lastChild);
+        console.log(container)
+    }

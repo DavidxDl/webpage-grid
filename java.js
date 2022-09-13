@@ -5,7 +5,8 @@ let size = 256;
 btn.addEventListener('click', () => {
     size = 0;
     size = prompt('What size do u want?');
-    if(size > 100){size = Math.pow(100, 2)}
+    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`
+    container.style.gridTemplateRows = `repeat(${size}, 1fr)` 
     size = Math.pow(size, 2);
 
     while(container.firstChild){
